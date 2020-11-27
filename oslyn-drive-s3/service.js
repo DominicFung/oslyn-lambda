@@ -154,6 +154,10 @@ function logEntry(errorStatus, file, err) {
   return newFile
 }
 
+function readGoogleFormAnswer() {
+
+}
+
 async function sendUploadStatusEmail(_STATUS, validEntries, exceptionEntries) {
   return new Promise(resolve => {
     var statusHtml = '<b style="color:green">Green</b>'
