@@ -1,0 +1,21 @@
+{
+  "name": "oslyn-drive-s3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node -e \"(async () => console.log( await require('./index').handler({}) ))();\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/local-auth": "^1.0.0",
+    "aws-sdk": "^2.795.0",
+    "csv-parse": "^4.14.1",
+    "googleapis": "^64.0.0",
+    "path": "^0.12.7",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "uuid": "^8.3.1"
+  }
+}
