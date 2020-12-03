@@ -4,12 +4,12 @@ function setTrigger() {
     .onFormSubmit().create()
 }
 
-function mainScript() {
+function test3() {
   var result = AWS2.request({
     accessKey: AWS_ACCESS_KEY,
     secretKey: AWS_SECRET_KEY,
-    service: '9hxlw25y66.execute-api',
-    region: 'us-east-2',
+    service: SERVICE,
+    region: REGION,
     path: 'dev/beta/count'
   })
 
@@ -17,12 +17,12 @@ function mainScript() {
   Logger.log(result.getContentText());  // ➝ { "message": "Hello Google!" }
 }
 
-function test3() {
+function mainScript() {
   var result = AWS2.request({
     accessKey: AWS_ACCESS_KEY,
     secretKey: AWS_SECRET_KEY,
-    service: '9hxlw25y66.execute-api',
-    region: 'us-east-2',
+    service: SERVICE,
+    region: REGION,
     path: 'dev/beta/count'
   })
 
