@@ -251,6 +251,7 @@ var AWS2 = (function () {
 
     headers['Host'] = host;
     headers['X-Amz-Date'] = dateStringFull;
+    
 
     // Task 1: Create a Canonical Request for Signature
     // http://docs.aws.amazon.com/general/latest/gr/sigv4-create-canonical-request.html
